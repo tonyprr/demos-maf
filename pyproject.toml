@@ -1,0 +1,24 @@
+[project]
+name = "demos-maf"
+version = "0.1.0"
+description = "Capacitación práctica en Microsoft Agent Framework (MAF) y DevUI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "agent-framework>=1.0.0",
+    "agent-framework-devui>=1.0.0b0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "demos-maf",
+]
+
